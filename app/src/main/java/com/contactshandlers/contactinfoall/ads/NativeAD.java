@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.contactshandlers.contactinfoall.BuildConfig;
 import com.contactshandlers.contactinfoall.R;
 import com.contactshandlers.contactinfoall.helper.Utils;
 import com.facebook.shimmer.ShimmerFrameLayout;
@@ -43,9 +42,6 @@ public class NativeAD {
         this.ad_start = ad_start;
         this.is_customize_id = is_customize_id;
         this.g_native_id = g_native_id;
-        if (BuildConfig.DEBUG) {
-            this.g_native_id = "/6499/example/native";
-        }
     }
 
     public void showNativeAd(Context context, FrameLayout frameLayout, ViewGroup nativeView, ShimmerFrameLayout shimmer, String native_type, String native_id) {
@@ -60,9 +56,6 @@ public class NativeAD {
         adNativeLoading = false;
         if (is_customize_id) {
             g_native_id = native_id;
-            if (BuildConfig.DEBUG) {
-                this.g_native_id = "/6499/example/native";
-            }
         }
         if (mNativeAd == null && g_native_id != null && !g_native_id.isEmpty()) {
             adBuilder = new AdLoader.Builder(context, g_native_id);

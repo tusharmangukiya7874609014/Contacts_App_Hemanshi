@@ -7,7 +7,6 @@ import android.os.Looper;
 
 import androidx.annotation.NonNull;
 
-import com.contactshandlers.contactinfoall.BuildConfig;
 import com.contactshandlers.contactinfoall.helper.Utils;
 import com.contactshandlers.contactinfoall.listeners.AdCallback;
 import com.google.android.gms.ads.AdError;
@@ -55,9 +54,6 @@ public class InterstitialAD {
         this.isStartLoading = false;
         this.isFirstTime = true;
         this.isTimerComplete = false;
-        if (BuildConfig.DEBUG) {
-            this.g_inter_id = "/6499/example/interstitial";
-        }
         loadAd(context);
     }
 

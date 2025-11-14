@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import com.contactshandlers.contactinfoall.BuildConfig;
 import com.contactshandlers.contactinfoall.helper.Utils;
 import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.gms.ads.AdListener;
@@ -37,9 +36,6 @@ public class BannerAD {
         this.ad_start = ad_start;
         this.is_customize_id = is_customize_id;
         this.g_banner_id = g_banner_id;
-        if (BuildConfig.DEBUG) {
-            this.g_banner_id = "/6499/example/banner";
-        }
     }
 
     public void showBannerAd(Context context, ViewGroup view, ViewGroup bannerView, ShimmerFrameLayout shimmer, String banner_id) {
@@ -62,9 +58,6 @@ public class BannerAD {
     private void loadAndShowBannerAd(Context context, ViewGroup view, ViewGroup bannerView, ShimmerFrameLayout shimmer, String banner_id) {
         if (is_customize_id) {
             g_banner_id = banner_id;
-            if (BuildConfig.DEBUG) {
-                this.g_banner_id = "ca-app-pub-3940256099942544/6300978111";
-            }
         }
         if (mAdView != null && mAdView.getParent() != null) {
             ((ViewGroup) mAdView.getParent()).removeView(mAdView);

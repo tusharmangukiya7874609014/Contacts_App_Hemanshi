@@ -11,7 +11,6 @@ import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ProcessLifecycleOwner;
 
-import com.contactshandlers.contactinfoall.BuildConfig;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.FullScreenContentCallback;
@@ -78,9 +77,6 @@ public class App extends Application implements Application.ActivityLifecycleCal
 
         public void setId(String gAppOpen){
             AppOpenAdManager.gAppOpen = gAppOpen;
-            if (BuildConfig.DEBUG) {
-                AppOpenAdManager.gAppOpen  = "/6499/example/app-open";
-            }
         }
 
         public AppOpenAdManager() {}
