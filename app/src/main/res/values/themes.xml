@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Contact" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">"#FFFFFF"</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupElevation">@dimen/_8sdp</item>
+        <item name="android:popupBackground">@drawable/bg_popup</item>
+    </style>
+
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/primary_font</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="PopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="Theme.Contact" parent="Base.Theme.Contact">
+        <item name="android:windowBackground">@color/bg_screen</item>
+    </style>
+
+    <string name="ad_attribution" translatable="false">Ad</string>
+
+</resources>

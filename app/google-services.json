@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "461996403294",
+    "project_id": "contacts-app-e5aca",
+    "storage_bucket": "contacts-app-e5aca.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461996403294:android:03768d47bb366c301ba2cf",
+        "android_client_info": {
+          "package_name": "com.contactshandlers.contactinfoall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_4QFokJiOyEWAD-ZQf0RvNEZOWahi4TY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

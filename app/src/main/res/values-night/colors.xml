@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#056ABE</color>
+    <color name="main2">#0683EB</color>
+    <color name="bg_screen">#111315</color>
+    <color name="primary_font">#FFFFFF</color>
+    <color name="grey_font">#828A8E</color>
+    <color name="secondary_font">#828A8E</color>
+    <color name="bg_color">#1A1C1E</color>
+    <color name="bg_stroke">#1A1C1E</color>
+    <color name="tab_shadow">#272A30</color>
+    <color name="ripple">#80FFFFFF</color>
+    <color name="red">#FF416C</color>
+    <color name="bg_account">#034D7AFC</color>
+    <color name="bg_dialog">#1A1C1E</color>
+    <color name="bg_transparent">#80000000</color>
+    <color name="icon_color">#056ABE</color>
+    <color name="yellow">#FF9800</color>
+    <color name="yellow_ad">#FFC166</color>
+    <color name="bg_border">#1AFFFFFF</color>
+    <color name="bg_recent_option">#272A30</color>
+    <color name="bg_ad">#4D505154</color>
+    <color name="ad_stroke">#454545</color>
+    <color name="bg_caller_id">#051723</color>
+</resources>

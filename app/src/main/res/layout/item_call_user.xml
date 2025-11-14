@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="@dimen/_4sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
+        android:src="@drawable/ic_profile_2"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"/>
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Time"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivMerge"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_merge"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/ic_background"/>
+
+    <ImageView
+        android:id="@+id/ivSwap"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_swap"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/ic_background"/>
+
+    <ImageView
+        android:id="@+id/ivCallEnd"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:visibility="gone"
+        android:src="@drawable/ic_call_end"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/ic_background"/>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.google.services)
+    alias(libs.plugins.google.crashLytics)
+    alias(libs.plugins.google.perf)
+}
+
+android {
+    namespace 'com.contactshandlers.contactinfoall'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.contactshandlers.contactinfoall"
+        minSdk 28
+        targetSdk 36
+        versionCode 8
+        versionName "1.7"
+        resConfigs "en","hi","de","pt","ar","tr","ru","ja","ko","ta","te","fr","nl","da","fi","sv","it","es","no","bn","zh","id"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ''
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.22.1'
+        }
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.sdp.android
+
+    implementation libs.glide
+
+    implementation libs.circleimageview
+
+    implementation libs.room.runtime
+    annotationProcessor libs.room.compiler
+    implementation libs.lifecycle.extensions
+    annotationProcessor libs.lifecycle.compiler
+
+    implementation libs.gson
+
+    implementation platform(libs.firebase.bom)
+    implementation libs.firebase.analytics
+    implementation libs.firebase.perf
+    implementation libs.firebase.crashlytics
+
+    implementation libs.play.services.ads
+
+    implementation libs.shimmer
+
+    implementation libs.firebase.database
+
+    implementation libs.clarity
+
+    implementation libs.lottie
+}

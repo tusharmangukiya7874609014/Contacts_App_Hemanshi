@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp"
+    android:background="@drawable/bg_dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/create_new_group"
+            android:textColor="@color/primary_font"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/ic_close" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/main" />
+
+    <EditText
+        android:id="@+id/etGroupName"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_8sdp"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="@string/enter_group_name"
+        android:textColorHint="@color/grey_font"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/primary_font"
+        android:background="@drawable/bg_group"
+        android:textSize="@dimen/_13sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/main"/>
+
+        <TextView
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/ok"
+            android:textColor="@color/main" />
+
+    </LinearLayout>
+
+</LinearLayout>

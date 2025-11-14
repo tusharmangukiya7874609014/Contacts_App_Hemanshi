@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Contact" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">"#111315"</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="Theme.Contact" parent="Base.Theme.Contact" >
+        <item name="android:windowBackground">@color/bg_screen</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupElevation">@dimen/_8sdp</item>
+        <item name="android:popupBackground">@drawable/bg_popup</item>
+    </style>
+
+</resources>
